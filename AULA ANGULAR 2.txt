@@ -1,0 +1,33 @@
+ng g c(component) (nome) = cria components
+					g = gerar
+ng g m(module) (nome) = cria modulos
+
+ng g s(service) (nome) = cria service
+
+
+AULA 9
+
+interpolação é igual a angular 1 {{ }}
+
+as diretivas é com [] ex: [src]="urlImagem" urlImagem = variavel no component
+
+o angular entender funções e outras coisas dentro do {{ }}
+
+AULA 10
+
+<select #classe> #classe = variavel local do template
+
+[class.alert-danger]="classe.value == 'alert-danger'"
+ |
+ v
+aplica a class alert-danget(bootstrap) se a variavel de ambiente do template
+#classe tiver o value do select =  a alert-danger
+
+class="alert {{ classe.value }}" -> é possivel fazer isso tbm para aplicar classe
+
+[style.display] = "classe.value == 'alert-danger' ? 'block' : 'none'"
+|
+v
+podemos tambem mudar o style do element HTML com a variavel de template local
+
+
